@@ -1,1 +1,2 @@
 pub mod api_credentials;
+pub mod habitica_client;
