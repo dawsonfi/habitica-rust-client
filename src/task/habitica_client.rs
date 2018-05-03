@@ -1,4 +1,4 @@
-use api_credentials::ApiCredentials;
+use task::api_credentials::ApiCredentials;
 
 pub struct HabiticaClient {
     api_credentials: ApiCredentials,
