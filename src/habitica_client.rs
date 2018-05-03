@@ -1,19 +1,17 @@
 use api_credentials::ApiCredentials;
 
 pub struct HabiticaClient {
-    api_credentials: ApiCredentials
+    api_credentials: ApiCredentials,
 }
 
 impl HabiticaClient {
-
     pub fn new(api_credentials: ApiCredentials) -> HabiticaClient {
-        HabiticaClient { api_credentials: api_credentials }
+        HabiticaClient { api_credentials }
     }
 
     pub fn get_api_credentials(&self) -> &ApiCredentials {
         &self.api_credentials
     }
-
 }
 
 #[cfg(test)]

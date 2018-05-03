@@ -1,14 +1,13 @@
 pub struct ApiCredentials {
     api_user: String,
-    api_key: String
+    api_key: String,
 }
 
 impl ApiCredentials {
-
     pub fn new(api_user: String, api_key: String) -> ApiCredentials {
         ApiCredentials {
             api_user: api_user,
-            api_key: api_key
+            api_key: api_key,
         }
     }
 
@@ -19,7 +18,6 @@ impl ApiCredentials {
     pub fn get_key(&self) -> &String {
         &self.api_key
     }
-
 }
 
 #[cfg(test)]
