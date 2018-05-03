@@ -5,10 +5,7 @@ pub struct ApiCredentials {
 
 impl ApiCredentials {
     pub fn new(api_user: String, api_key: String) -> ApiCredentials {
-        ApiCredentials {
-            api_user: api_user,
-            api_key: api_key,
-        }
+        ApiCredentials { api_user, api_key }
     }
 
     pub fn get_user(&self) -> &String {
