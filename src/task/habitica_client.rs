@@ -15,7 +15,7 @@ impl HabiticaClient {
     }
 
     pub fn get_all_tasks(&self) -> Tasks {
-        Tasks {}
+        Tasks::new(Vec::new())
     }
 }
 
