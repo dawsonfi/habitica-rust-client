@@ -1,5 +1,4 @@
 use task::api_credentials::ApiCredentials;
-use task::tasks::Tasks;
 
 pub struct RestClient {
     api_credentials: ApiCredentials,
@@ -11,12 +10,8 @@ impl RestClient {
         RestClient { api_credentials }
     }
 
-    pub fn get_api_credentials(&self) -> &ApiCredentials {
+    fn get_api_credentials(&self) -> &ApiCredentials {
         &self.api_credentials
-    }
-
-    pub fn get_all_tasks(&self) -> Tasks {
-        Tasks {}
     }
 
 }

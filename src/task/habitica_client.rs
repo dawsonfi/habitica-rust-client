@@ -1,4 +1,5 @@
 use task::api_credentials::ApiCredentials;
+use task::tasks::Tasks;
 
 pub struct HabiticaClient {
     api_credentials: ApiCredentials,
@@ -11,6 +12,10 @@ impl HabiticaClient {
 
     pub fn get_api_credentials(&self) -> &ApiCredentials {
         &self.api_credentials
+    }
+
+    pub fn get_all_tasks(&self) -> Tasks {
+        Tasks {}
     }
 }
 
