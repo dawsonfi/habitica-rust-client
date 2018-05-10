@@ -1,21 +1,24 @@
 use task::api_credentials::ApiCredentials;
+use task::rest_client::{RestClient, RestClientError};
 use task::tasks::Tasks;
+use serde_json::Value;
 
 pub struct HabiticaClient {
-    api_credentials: ApiCredentials,
+    rest_client: RestClient,
+    url: &'static str
 }
 
 impl HabiticaClient {
     pub fn new(api_credentials: ApiCredentials) -> HabiticaClient {
-        HabiticaClient { api_credentials }
+        let rest_client = RestClient::new(api_credentials);
+
+        HabiticaClient { rest_client, url: "https://habitica.com/api/v3/tasks/user" }
     }
 
-    pub fn get_api_credentials(&self) -> &ApiCredentials {
-        &self.api_credentials
-    }
+    pub fn get_all_tasks(&self) -> Result<Tasks, RestClientError> {
+        let response = self.rest_client.get::<&str, Value>(self.url);
 
-    pub fn get_all_tasks(&self) -> Tasks {
-        Tasks::new(Vec::new())
+        Ok(Tasks::new(response?))
     }
 }
 
@@ -25,12 +28,13 @@ mod tests {
     use super::*;
 
     #[test]
-    fn build_client_with_api_credentials() {
-        let api_credentials = ApiCredentials::new("raw".to_string(), "potato".to_string());
+    fn get_tasks_from_habitica() {
+
+        let api_credentials = ApiCredentials::new("user".to_string(), "key".to_string());
 
         let client = HabiticaClient::new(api_credentials);
 
-        assert_eq!(client.get_api_credentials().get_user(), &"raw".to_string());
+        let tasks = client.get_all_tasks();
     }
 
 }
