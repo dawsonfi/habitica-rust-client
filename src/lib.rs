@@ -4,7 +4,7 @@ extern crate mocktopus;
 
 #[macro_use]
 extern crate serde_json;
-extern crate serde;
 extern crate reqwest;
+extern crate serde;
 
 pub mod task;

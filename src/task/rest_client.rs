@@ -1,24 +1,26 @@
 #[cfg(test)]
 use mocktopus::macros::*;
 
-use task::api_credentials::ApiCredentials;
 use reqwest;
-use reqwest::{IntoUrl, Client};
 use reqwest::header::Headers;
+use reqwest::{Client, IntoUrl};
 use serde::de::DeserializeOwned;
 use std::fmt;
+use task::api_credentials::ApiCredentials;
 
 pub struct RestClient {
     api_credentials: ApiCredentials,
-    client: Client
+    client: Client,
 }
 
 #[cfg_attr(test, mockable)]
 impl RestClient {
-
     pub fn new(api_credentials: ApiCredentials) -> RestClient {
         let client = reqwest::Client::new();
-        RestClient { api_credentials, client}
+        RestClient {
+            api_credentials,
+            client,
+        }
     }
 
     pub fn get<T: IntoUrl, D: DeserializeOwned>(&self, url: T) -> Result<D, RestClientError> {
@@ -50,11 +52,10 @@ impl RestClient {
     fn get_client(&self) -> &Client {
         &self.client
     }
-
 }
 
 pub struct RestClientError {
-    message: String
+    message: String,
 }
 
 impl fmt::Debug for RestClientError {
@@ -64,7 +65,6 @@ impl fmt::Debug for RestClientError {
 }
 
 impl RestClientError {
-
     pub fn new(message: String) -> RestClientError {
         RestClientError { message }
     }
@@ -72,5 +72,4 @@ impl RestClientError {
     pub fn get_message(&self) -> &String {
         &self.message
     }
-
 }
