@@ -26,15 +26,30 @@ impl HabiticaClient {
 mod tests {
 
     use super::*;
+    use mocktopus::mocking::*;
 
     #[test]
-    fn get_tasks_from_habitica() {
-
+    fn return_sucess_when_rest_call_succeeds() {
         let api_credentials = ApiCredentials::new("user".to_string(), "key".to_string());
-
+        RestClient::get::<&str, Value>.mock_safe(|_, _| { MockResult::Return(Ok(json!("{}")))});
         let client = HabiticaClient::new(api_credentials);
 
         let tasks = client.get_all_tasks();
+
+        assert!(tasks.is_ok());
+    }
+
+    #[test]
+    fn return_err_when_rest_call_fails() {
+        let api_credentials = ApiCredentials::new("user".to_string(), "key".to_string());
+        let client = HabiticaClient::new(api_credentials);
+        RestClient::get::<&str, Value>.mock_safe(|_, _| {
+            MockResult::Return(Err(RestClientError::new("failed".to_string())))
+        });
+
+        let tasks = client.get_all_tasks();
+
+        assert!(tasks.is_err());
     }
 
 }

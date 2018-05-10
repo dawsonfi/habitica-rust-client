@@ -1,3 +1,6 @@
+#[cfg(test)]
+use mocktopus::macros::*;
+
 use task::api_credentials::ApiCredentials;
 use reqwest;
 use reqwest::{IntoUrl, Client};
@@ -10,6 +13,7 @@ pub struct RestClient {
     client: Client
 }
 
+#[cfg_attr(test, mockable)]
 impl RestClient {
 
     pub fn new(api_credentials: ApiCredentials) -> RestClient {
@@ -49,7 +53,9 @@ impl RestClient {
 
 }
 
-pub struct RestClientError;
+pub struct RestClientError {
+    message: String
+}
 
 impl fmt::Debug for RestClientError {
     fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
@@ -57,18 +63,14 @@ impl fmt::Debug for RestClientError {
     }
 }
 
-#[cfg(test)]
-mod tests {
+impl RestClientError {
 
-    use super::*;
+    pub fn new(message: String) -> RestClientError {
+        RestClientError { message }
+    }
 
-    #[test]
-    fn build_client_with_credentials() {
-        let api_credentials = ApiCredentials::new("raw".to_string(), "potato".to_string());
-
-        let client = RestClient::new(api_credentials);
-
-        assert_eq!(client.get_api_credentials().get_user(), &"raw".to_string())
+    pub fn get_message(&self) -> &String {
+        &self.message
     }
 
 }
