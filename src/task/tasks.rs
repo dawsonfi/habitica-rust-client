@@ -14,6 +14,10 @@ impl Tasks {
 
         Tasks { tasks: task_list }
     }
+
+    pub fn get_tasks(&self) -> &Vec<Task> {
+        &self.tasks
+    }
 }
 
 pub struct Task {
