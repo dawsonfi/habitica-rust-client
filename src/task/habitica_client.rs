@@ -9,7 +9,6 @@ pub struct HabiticaClient {
 }
 
 impl HabiticaClient {
-
     /// Creates a new HabiticaClient
     ///
     /// # Examples

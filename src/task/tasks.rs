@@ -51,7 +51,6 @@ impl Tasks {
 }
 
 impl Task {
-
     pub fn new(raw_task: &Value) -> Task {
         Task {
             text: Task::get_value_string(raw_task, "text"),
