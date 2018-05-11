@@ -35,9 +35,8 @@ mod tests {
     #[ignore] //returning exception
     fn return_sucess_when_rest_call_succeeds() {
         let api_credentials = ApiCredentials::new("user".to_string(), "key".to_string());
-        RestClient::get::<&str, Value>.mock_safe(|_, _|
-            MockResult::Return(Ok(json!({"data": [{"text": "Todo"}]})))
-        );
+        RestClient::get::<&str, Value>
+            .mock_safe(|_, _| MockResult::Return(Ok(json!({"data": [{"text": "Todo"}]}))));
         let client = HabiticaClient::new(api_credentials);
 
         let tasks = client.get_all_tasks();
@@ -49,9 +48,8 @@ mod tests {
     fn return_err_when_rest_call_fails() {
         let api_credentials = ApiCredentials::new("user".to_string(), "key".to_string());
         let client = HabiticaClient::new(api_credentials);
-        RestClient::get::<&str, Value>.mock_safe(|_, _|
-            MockResult::Return(Err(RestClientError::new("failed".to_string())))
-        );
+        RestClient::get::<&str, Value>
+            .mock_safe(|_, _| MockResult::Return(Err(RestClientError::new("failed".to_string()))));
 
         let tasks = client.get_all_tasks();
 

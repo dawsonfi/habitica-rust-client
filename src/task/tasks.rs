@@ -1,13 +1,22 @@
 use serde_json::Value;
 
+#[derive(Debug)]
 pub struct Tasks {
     tasks: Vec<Task>,
 }
 
+#[derive(Debug)]
+pub struct Task {
+    text: String,
+}
+
 impl Tasks {
     pub fn new(raw_tasks: Value) -> Tasks {
-        let task_list = raw_tasks.get("data").unwrap()
-            .as_array().unwrap()
+        let task_list = raw_tasks
+            .get("data")
+            .unwrap()
+            .as_array()
+            .unwrap()
             .iter()
             .map(Task::new)
             .collect();
@@ -20,16 +29,11 @@ impl Tasks {
     }
 }
 
-pub struct Task {
-
-    text: String
-
-}
-
 impl Task {
-
     pub fn new(raw_task: &Value) -> Task {
-        Task { text: Task::get_value_string(raw_task, "text") }
+        Task {
+            text: Task::get_value_string(raw_task, "text"),
+        }
     }
 
     pub fn get_text(&self) -> &String {
@@ -37,15 +41,9 @@ impl Task {
     }
 
     fn get_value_string(raw_task: &Value, index: &str) -> String {
-        raw_task.get(index)
-            .unwrap()
-            .as_str()
-            .unwrap()
-            .to_string()
+        raw_task.get(index).unwrap().as_str().unwrap().to_string()
     }
-
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -69,6 +67,5 @@ mod tests {
 
         assert_eq!(task.get_text(), "Todo");
     }
-
 
 }
