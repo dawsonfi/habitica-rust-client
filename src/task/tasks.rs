@@ -24,18 +24,36 @@ impl Tasks {
         Tasks { tasks: task_list }
     }
 
+    /// Returns all of users tasks (habits, dailies, to-dos)
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// let tasks = habitica_client.get_tasks();
+    ///
+    /// print!("{:?}", tasks);
+    ///
+    /// ```
     pub fn get_tasks(&self) -> &Vec<Task> {
         &self.tasks
     }
 }
 
 impl Task {
+    
     pub fn new(raw_task: &Value) -> Task {
         Task {
             text: Task::get_value_string(raw_task, "text"),
         }
     }
 
+    /// Returns the text of the task
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// print!("{:?}", task.get_text()));
+    /// ```
     pub fn get_text(&self) -> &String {
         &self.text
     }

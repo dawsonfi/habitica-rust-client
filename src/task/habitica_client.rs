@@ -9,6 +9,17 @@ pub struct HabiticaClient {
 }
 
 impl HabiticaClient {
+
+    /// Creates a new HabiticaClient
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// let api_credentials = ApiCredentials::new(user_id, api_token);
+    ///
+    /// HabiticaClient::new(api_credentials);
+    ///
+    /// ```
     pub fn new(api_credentials: ApiCredentials) -> HabiticaClient {
         let rest_client = RestClient::new(api_credentials);
 
@@ -18,6 +29,16 @@ impl HabiticaClient {
         }
     }
 
+    /// Returns all of users tasks (habits, dailies, to-dos)
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// let api_credentials = ApiCredentials::new(user_id, api_token);
+    ///
+    /// HabiticaClient::new(api_credentials);
+    ///
+    /// ```
     pub fn get_all_tasks(&self) -> Result<Tasks, RestClientError> {
         let response = self.rest_client.get::<&str, Value>(self.url);
 
