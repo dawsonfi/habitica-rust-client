@@ -29,7 +29,18 @@ impl Tasks {
     /// # Examples
     ///
     /// ```
-    /// let tasks = habitica_client.get_tasks();
+    /// extern crate habitica_rust_client;
+    /// extern crate serde_json;
+    ///
+    /// use habitica_rust_client::task::tasks::Tasks;
+    /// use serde_json::Value;
+    ///
+    /// let data = r#"{
+    ///                "data": [{"text": "test"}]
+    ///               }"#;
+    ///
+    /// let value: Value = serde_json::from_str(data).unwrap();
+    /// let tasks = Tasks::new(value);
     ///
     /// print!("{:?}", tasks);
     ///
@@ -52,7 +63,18 @@ impl Task {
     /// # Examples
     ///
     /// ```
-    /// print!("{:?}", task.get_text()));
+    /// extern crate habitica_rust_client;
+    /// extern crate serde_json;
+    ///
+    /// use habitica_rust_client::task::tasks::Task;
+    /// use serde_json::Value;
+    ///
+    /// let data = r#"{"text": "test"}"#;
+    ///
+    /// let value: Value = serde_json::from_str(data).unwrap();
+    /// let task = Task::new(&value);
+    ///
+    /// print!("{:?}", task.get_text());
     /// ```
     pub fn get_text(&self) -> &String {
         &self.text

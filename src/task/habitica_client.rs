@@ -15,7 +15,12 @@ impl HabiticaClient {
     /// # Examples
     ///
     /// ```
-    /// let api_credentials = ApiCredentials::new(user_id, api_token);
+    /// extern crate habitica_rust_client;
+    ///
+    /// use habitica_rust_client::task::api_credentials::ApiCredentials;
+    /// use habitica_rust_client::task::habitica_client::HabiticaClient;
+    ///
+    /// let api_credentials = ApiCredentials::new("user_id".to_string(), "api_token".to_string());
     ///
     /// HabiticaClient::new(api_credentials);
     ///
@@ -34,9 +39,18 @@ impl HabiticaClient {
     /// # Examples
     ///
     /// ```
-    /// let api_credentials = ApiCredentials::new(user_id, api_token);
+    /// extern crate habitica_rust_client;
     ///
-    /// HabiticaClient::new(api_credentials);
+    /// use habitica_rust_client::task::api_credentials::ApiCredentials;
+    /// use habitica_rust_client::task::habitica_client::HabiticaClient;
+    /// use std::env;
+    ///
+    /// let api_credentials = ApiCredentials::new(
+    ///        env::var("API_USER").unwrap().to_string(),
+    ///        env::var("API_KEY").unwrap().to_string(),
+    /// );
+    ///
+    /// HabiticaClient::new(api_credentials).get_all_tasks();
     ///
     /// ```
     ///
