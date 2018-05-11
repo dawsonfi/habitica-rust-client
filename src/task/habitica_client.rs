@@ -39,6 +39,11 @@ impl HabiticaClient {
     /// HabiticaClient::new(api_credentials);
     ///
     /// ```
+    ///
+    /// # Errors
+    ///
+    /// If the REST call to Habitica Api does not succeed (status code diferrent from 200) it will return an error with a String that contains what happened
+    /// 
     pub fn get_all_tasks(&self) -> Result<Tasks, RestClientError> {
         let response = self.rest_client.get::<&str, Value>(self.url);
 
