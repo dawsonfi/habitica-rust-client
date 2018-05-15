@@ -1,0 +1,11 @@
+language: rust
+dist: trusty
+cache: cargo
+
+rust:
+  - nightly
+
+script:
+  - cargo build
+  - cargo test
+  - cargo publish
