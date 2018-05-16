@@ -9,4 +9,4 @@ script:
   - cargo build
   - cargo test
   - cargo login $CARGO_LOGIN_KEY
-  - cargo publish
+  - ./ci/publish.sh
