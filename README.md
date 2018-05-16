@@ -10,7 +10,7 @@ Feel free to use, open an issue or a PR.
 
 ## Supported Operations
 
-###List user tasks
+### List user tasks
 
 Method: `client.get_all_tasks()`
 
