@@ -3,8 +3,15 @@ dist: trusty
 cache: cargo
 sudo: true
 
+rust:
+  - nightly
+
 before_install:
   - sudo apt-get update
+
+matrix:
+  allow_failures:
+    - rust: nightly
 
 addons:
   apt:
@@ -15,9 +22,7 @@ addons:
       - cmake
       - gcc
       - binutils-dev
-
-rust:
-  - nightly
+      - libiberty-dev
 
 install:
   - cargo build
