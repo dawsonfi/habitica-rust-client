@@ -5,6 +5,10 @@ authors = ["Dawson Israel <dawsonfi@gmail.com>"]
 license = "MIT"
 description = "Unnoficial Habitica Api Rust Client"
 
+[badges]
+travis-ci = { repository = "dawsonfi/habitica-rust-client", branch = "master" }
+codecov = { repository = "dawsonfi/habitica-rust-client", branch = "master", service = "github" }
+
 [dependencies]
 mocktopus = "0.3.6"
 reqwest = "0.8.5"
