@@ -10,6 +10,4 @@ install:
 
 script:
   - cargo test
-
-deploy:
   - ./ci/publish.sh
