@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/dawsonfi/habitica-rust-client.svg?branch=master)](https://travis-ci.org/dawsonfi/habitica-rust-client)
 [![Current Crates.io Version](https://img.shields.io/crates/v/habitica_rust_client.svg)](https://crates.io/crates/habitica_rust_client)
 [![Docs.rs](https://docs.rs/habitica_rust_client/badge.svg)](https://docs.rs/habitica_rust_client/)
+[![Code Coverage](https://codecov.io/github/dawsonfi/habitica-rust-client/coverage.svg?branch=master)](https://codecov.io/github/dawsonfi/habitica-rust-client)
+
 
 # Habitica Api Rust Client
 
