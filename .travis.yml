@@ -5,8 +5,11 @@ cache: cargo
 rust:
   - nightly
 
-script:
+install:
   - cargo build
+
+script:
   - cargo test
-  - cargo login $CARGO_LOGIN_KEY
+
+deploy:
   - ./ci/publish.sh
