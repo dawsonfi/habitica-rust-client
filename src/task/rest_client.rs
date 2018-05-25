@@ -1,38 +1,27 @@
-#[cfg(test)]
-use mocktopus::macros::*;
-
 use reqwest;
 use reqwest::header::Headers;
-use reqwest::{Client, IntoUrl};
-use serde::de::DeserializeOwned;
+use reqwest::Client;
 use std::fmt;
 use task::api_credentials::ApiCredentials;
+use serde_json::Value;
+
+pub trait RestOperations {
+    fn get(&self, url: &str) -> Result<Value, RestClientError>;
+}
 
 pub struct RestClient {
     api_credentials: ApiCredentials,
     client: Client,
 }
 
-#[cfg_attr(test, mockable)]
 impl RestClient {
-    pub fn new(api_credentials: ApiCredentials) -> RestClient {
+
+    pub fn new(api_credentials: ApiCredentials) -> Box<RestOperations> {
         let client = reqwest::Client::new();
-        RestClient {
+        Box::new(RestClient {
             api_credentials,
             client,
-        }
-    }
-
-    pub fn get<T: IntoUrl, D: DeserializeOwned>(&self, url: T) -> Result<D, RestClientError> {
-        let headers = self.build_auth_headers();
-
-        Ok(self.get_client()
-            .get(url)
-            .headers(headers)
-            .send()
-            .unwrap()
-            .json::<D>()
-            .unwrap())
+        })
     }
 
     fn build_auth_headers(&self) -> Headers {
@@ -51,6 +40,20 @@ impl RestClient {
 
     fn get_client(&self) -> &Client {
         &self.client
+    }
+}
+
+impl RestOperations for RestClient {
+    fn get(&self, url: &str) -> Result<Value, RestClientError> {
+        let headers = self.build_auth_headers();
+
+        Ok(self.get_client()
+            .get(url)
+            .headers(headers)
+            .send()
+            .unwrap()
+            .json::<Value>()
+            .unwrap())
     }
 }
 

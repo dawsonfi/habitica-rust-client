@@ -10,7 +10,6 @@ travis-ci = { repository = "dawsonfi/habitica-rust-client", branch = "master" }
 codecov = { repository = "dawsonfi/habitica-rust-client", branch = "master", service = "github" }
 
 [dependencies]
-mocktopus = "0.3.6"
 reqwest = "0.8.5"
 serde = "1.0.53"
 serde_json = "1.0.17"
