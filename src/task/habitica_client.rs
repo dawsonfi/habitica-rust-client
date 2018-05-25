@@ -68,6 +68,7 @@ impl HabiticaClient {
 mod tests {
 
     use super::*;
+    use serde_json;
     use serde_json::Value;
 
     #[test]
@@ -105,7 +106,14 @@ mod tests {
 
     impl RestOperations for SuccessRestClient {
         fn get(&self, _url: &str) -> Result<Value, RestClientError> {
-            Ok(json!({"data": [{"text": "Todo"}]}))
+            let data = r#"{
+                                "data": [
+                                    {"text": "Todo"}
+                                ]
+                             }"#;
+            let raw_tasks: Value = serde_json::from_str(data).unwrap();
+
+            Ok(Value::from(raw_tasks))
         }
     }
 

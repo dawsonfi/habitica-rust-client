@@ -88,10 +88,16 @@ impl Task {
 mod tests {
 
     use super::*;
+    use serde_json;
 
     #[test]
     fn should_build_tasks_from_response() {
-        let raw_tasks = json!({"data": [{"text": "Todo"}]});
+        let data = r#"{
+                                "data": [
+                                    {"text": "Todo"}
+                                ]
+                             }"#;
+        let raw_tasks = serde_json::from_str(data).unwrap();
 
         let tasks = Tasks::new(raw_tasks);
 
@@ -100,7 +106,8 @@ mod tests {
 
     #[test]
     fn should_build_task_from_value() {
-        let raw_task = json!({"text": "Todo"});
+        let data = r#"{ "text": "Todo" }"#;
+        let raw_task = serde_json::from_str(data).unwrap();
 
         let task = Task::new(&raw_task);
 
