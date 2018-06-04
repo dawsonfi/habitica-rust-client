@@ -1,0 +1,1994 @@
+{
+  "success": true,
+  "data": [
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "up": true,
+      "down": true,
+      "counterUp": 0,
+      "counterDown": 0,
+      "frequency": "daily",
+      "history": [
+        {
+          "date": 1522242254686,
+          "value": 1
+        },
+        {
+          "date": 1524418533517,
+          "value": 1.9747
+        },
+        {
+          "date": 1524437511653,
+          "value": 2.9253562257358428
+        },
+        {
+          "date": 1524508988688,
+          "value": 3.853133245658556
+        },
+        {
+          "date": 1524587278153,
+          "value": 4.759112700885761
+        },
+        {
+          "date": 1524587278895,
+          "value": 5.6443010177121415
+        },
+        {
+          "date": 1524587279440,
+          "value": 6.5096362419810205
+        },
+        {
+          "date": 1524656517667,
+          "value": 7.355994112832055
+        },
+        {
+          "date": 1524691374216,
+          "value": 8.184193475367
+        },
+        {
+          "date": 1524770359687,
+          "value": 8.995001116880612
+        },
+        {
+          "date": 1525085312999,
+          "value": 9.789136098905757
+        },
+        {
+          "date": 1525088415819,
+          "value": 10.567273646958993
+        },
+        {
+          "date": 1525344181278,
+          "value": 11.330048651176607
+        },
+        {
+          "date": 1525389124408,
+          "value": 12.07805882370548
+        },
+        {
+          "date": 1525480799394,
+          "value": 12.811867552519566
+        },
+        {
+          "date": 1525564509536,
+          "value": 13.53200648607811
+        },
+        {
+          "date": 1525828008334,
+          "value": 14.23897787876845
+        }
+      ],
+      "type": "habit",
+      "notes": "",
+      "tags": [],
+      "value": 14.23897787876845,
+      "priority": 1.5,
+      "attribute": "str",
+      "reminders": [],
+      "createdAt": "2018-03-28T13:03:26.085Z",
+      "updatedAt": "2018-05-09T10:19:08.393Z",
+      "_id": "ac67717e-c9da-4de4-beb9-973f1a1510e6",
+      "text": "Study",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "ac67717e-c9da-4de4-beb9-973f1a1510e6"
+    },
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "up": true,
+      "down": true,
+      "counterUp": 0,
+      "counterDown": 0,
+      "frequency": "daily",
+      "history": [
+        {
+          "date": 1522242250616,
+          "value": 1
+        },
+        {
+          "date": 1524326125737,
+          "value": 1.9747
+        },
+        {
+          "date": 1524418536005,
+          "value": 2.9253562257358428
+        },
+        {
+          "date": 1524587284433,
+          "value": 3.853133245658556
+        },
+        {
+          "date": 1524609171457,
+          "value": 4.759112700885761
+        },
+        {
+          "date": 1524609172053,
+          "value": 5.6443010177121415
+        },
+        {
+          "date": 1524694816300,
+          "value": 6.5096362419810205
+        },
+        {
+          "date": 1524751707908,
+          "value": 7.355994112832055
+        },
+        {
+          "date": 1525085311869,
+          "value": 8.184193475367
+        },
+        {
+          "date": 1525344180750,
+          "value": 8.995001116880612
+        },
+        {
+          "date": 1525384403559,
+          "value": 9.789136098905757
+        },
+        {
+          "date": 1525616633128,
+          "value": 10.567273646958993
+        },
+        {
+          "date": 1525739272846,
+          "value": 11.330048651176607
+        },
+        {
+          "date": 1525828005651,
+          "value": 12.07805882370548
+        }
+      ],
+      "type": "habit",
+      "notes": "",
+      "tags": [],
+      "value": 12.07805882370548,
+      "priority": 2,
+      "attribute": "str",
+      "reminders": [],
+      "createdAt": "2018-03-28T13:03:54.722Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "975631db-3273-4a43-bdd8-4aa885c47d9f",
+      "text": "Exercise",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "975631db-3273-4a43-bdd8-4aa885c47d9f"
+    },
+    {
+      "repeat": {
+        "m": true,
+        "t": true,
+        "w": true,
+        "th": true,
+        "f": true,
+        "s": true,
+        "su": true
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "daily",
+      "everyX": 1,
+      "streak": 19,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "2018-05-10T03:00:00.000Z",
+        "2018-05-11T03:00:00.000Z",
+        "2018-05-12T03:00:00.000Z",
+        "2018-05-13T03:00:00.000Z",
+        "2018-05-14T03:00:00.000Z",
+        "2018-05-15T03:00:00.000Z"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524326518536,
+          "value": 1
+        },
+        {
+          "date": 1524401790317,
+          "value": 1.9747
+        },
+        {
+          "date": 1524508709750,
+          "value": 2.9253562257358428
+        },
+        {
+          "date": 1524587274025,
+          "value": 3.853133245658556
+        },
+        {
+          "date": 1524656500988,
+          "value": 4.759112700885761
+        },
+        {
+          "date": 1524743976160,
+          "value": 5.6443010177121415
+        },
+        {
+          "date": 1524827229884,
+          "value": 6.5096362419810205
+        },
+        {
+          "date": 1524916039947,
+          "value": 7.355994112832055
+        },
+        {
+          "date": 1525028469603,
+          "value": 8.184193475367
+        },
+        {
+          "date": 1525085307262,
+          "value": 8.995001116880612
+        },
+        {
+          "date": 1525184402236,
+          "value": 9.789136098905757
+        },
+        {
+          "date": 1525257970032,
+          "value": 10.567273646958993
+        },
+        {
+          "date": 1525343775272,
+          "value": 11.330048651176607
+        },
+        {
+          "date": 1525447839420,
+          "value": 12.07805882370548
+        },
+        {
+          "date": 1525515795166,
+          "value": 12.811867552519566
+        },
+        {
+          "date": 1525616628916,
+          "value": 13.53200648607811
+        },
+        {
+          "date": 1525697544118,
+          "value": 14.23897787876845
+        },
+        {
+          "date": 1525771707628,
+          "value": 14.933256723256155
+        },
+        {
+          "date": 1525861186561,
+          "value": 15.615292692592663
+        }
+      ],
+      "completed": true,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 15.615292692592663,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:57:21.569Z",
+      "updatedAt": "2018-05-09T10:19:46.608Z",
+      "_id": "1376ec71-7684-4a16-a7aa-3d49bdc64d91",
+      "text": "Verificar Aniversariantes do dia",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": true,
+      "id": "1376ec71-7684-4a16-a7aa-3d49bdc64d91"
+    },
+    {
+      "repeat": {
+        "m": true,
+        "t": true,
+        "w": true,
+        "th": true,
+        "f": true,
+        "s": true,
+        "su": true
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "daily",
+      "everyX": 1,
+      "streak": 18,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Thu May 10 2018 00:00:00 GMT-0300",
+        "Fri May 11 2018 00:00:00 GMT-0300",
+        "Sat May 12 2018 00:00:00 GMT-0300",
+        "Sun May 13 2018 00:00:00 GMT-0300",
+        "Mon May 14 2018 00:00:00 GMT-0300",
+        "Tue May 15 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524326527657,
+          "value": 1
+        },
+        {
+          "date": 1524418540867,
+          "value": 1.9747
+        },
+        {
+          "date": 1524522524534,
+          "value": 2.9253562257358428
+        },
+        {
+          "date": 1524609170383,
+          "value": 3.853133245658556
+        },
+        {
+          "date": 1524694814889,
+          "value": 4.759112700885761
+        },
+        {
+          "date": 1524780659313,
+          "value": 5.6443010177121415
+        },
+        {
+          "date": 1524876198863,
+          "value": 6.5096362419810205
+        },
+        {
+          "date": 1524915994754,
+          "value": 7.355994112832055
+        },
+        {
+          "date": 1525028464787,
+          "value": 8.184193475367
+        },
+        {
+          "date": 1525085308200,
+          "value": 8.995001116880612
+        },
+        {
+          "date": 1525184400075,
+          "value": 9.789136098905757
+        },
+        {
+          "date": 1525312758599,
+          "value": 10.567273646958993
+        },
+        {
+          "date": 1525384419036,
+          "value": 11.330048651176607
+        },
+        {
+          "date": 1525480771020,
+          "value": 12.07805882370548
+        },
+        {
+          "date": 1525564500567,
+          "value": 12.811867552519566
+        },
+        {
+          "date": 1525616627875,
+          "value": 13.53200648607811
+        },
+        {
+          "date": 1525738975734,
+          "value": 14.23897787876845
+        },
+        {
+          "date": 1525816781196,
+          "value": 14.933256723256155
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 14.933256723256155,
+      "priority": 1.5,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:57:45.449Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "c9e083c5-a892-4277-bbeb-51b2c37d221a",
+      "text": "Go to GIM",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": true,
+      "id": "c9e083c5-a892-4277-bbeb-51b2c37d221a"
+    },
+    {
+      "repeat": {
+        "m": true,
+        "t": false,
+        "w": false,
+        "th": false,
+        "f": false,
+        "s": false,
+        "su": false
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "weekly",
+      "everyX": 1,
+      "streak": 3,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Mon May 14 2018 00:00:00 GMT-0300",
+        "Mon May 21 2018 00:00:00 GMT-0300",
+        "Mon May 28 2018 00:00:00 GMT-0300",
+        "Mon Jun 04 2018 00:00:00 GMT-0300",
+        "Mon Jun 11 2018 00:00:00 GMT-0300",
+        "Mon Jun 18 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524401779164,
+          "value": 0
+        },
+        {
+          "date": 1524491788856,
+          "value": 0
+        },
+        {
+          "date": 1524508695779,
+          "value": 1
+        },
+        {
+          "date": 1524656488584,
+          "value": 1
+        },
+        {
+          "date": 1524743963368,
+          "value": 1
+        },
+        {
+          "date": 1524827198535,
+          "value": 1
+        },
+        {
+          "date": 1524915986940,
+          "value": 1
+        },
+        {
+          "date": 1525028457381,
+          "value": 1
+        },
+        {
+          "date": 1525081452992,
+          "value": 1
+        },
+        {
+          "date": 1525085309110,
+          "value": 1.9747
+        },
+        {
+          "date": 1525257930752,
+          "value": 1.9747
+        },
+        {
+          "date": 1525343767133,
+          "value": 1.9747
+        },
+        {
+          "date": 1525447814575,
+          "value": 1.9747
+        },
+        {
+          "date": 1525515446492,
+          "value": 1.9747
+        },
+        {
+          "date": 1525616241044,
+          "value": 1.9747
+        },
+        {
+          "date": 1525686066548,
+          "value": 1.9747
+        },
+        {
+          "date": 1525697546952,
+          "value": 2.9253562257358428
+        },
+        {
+          "date": 1525861148276,
+          "value": 2.9253562257358428
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 2.9253562257358428,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:58:01.521Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "f631f44e-0bb2-495d-b816-34cb06e1bb32",
+      "text": "Work on Ruby",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": false,
+      "id": "f631f44e-0bb2-495d-b816-34cb06e1bb32"
+    },
+    {
+      "repeat": {
+        "m": true,
+        "t": false,
+        "w": false,
+        "th": false,
+        "f": false,
+        "s": false,
+        "su": false
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "weekly",
+      "everyX": 1,
+      "streak": 3,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Mon May 14 2018 00:00:00 GMT-0300",
+        "Mon May 21 2018 00:00:00 GMT-0300",
+        "Mon May 28 2018 00:00:00 GMT-0300",
+        "Mon Jun 04 2018 00:00:00 GMT-0300",
+        "Mon Jun 11 2018 00:00:00 GMT-0300",
+        "Mon Jun 18 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524401779166,
+          "value": 0
+        },
+        {
+          "date": 1524491788858,
+          "value": 0
+        },
+        {
+          "date": 1524508694587,
+          "value": 1
+        },
+        {
+          "date": 1524656488586,
+          "value": 1
+        },
+        {
+          "date": 1524743963372,
+          "value": 1
+        },
+        {
+          "date": 1524827198537,
+          "value": 1
+        },
+        {
+          "date": 1524915986943,
+          "value": 1
+        },
+        {
+          "date": 1525028457384,
+          "value": 1
+        },
+        {
+          "date": 1525081452995,
+          "value": 1
+        },
+        {
+          "date": 1525085310240,
+          "value": 1.9747
+        },
+        {
+          "date": 1525257930754,
+          "value": 1.9747
+        },
+        {
+          "date": 1525343767135,
+          "value": 1.9747
+        },
+        {
+          "date": 1525447814579,
+          "value": 1.9747
+        },
+        {
+          "date": 1525515446498,
+          "value": 1.9747
+        },
+        {
+          "date": 1525616241046,
+          "value": 1.9747
+        },
+        {
+          "date": 1525686066551,
+          "value": 1.9747
+        },
+        {
+          "date": 1525738973568,
+          "value": 2.9253562257358428
+        },
+        {
+          "date": 1525861148282,
+          "value": 2.9253562257358428
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 2.9253562257358428,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:58:05.984Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "ba812bfe-c1c7-4446-a551-2eb018ad43f7",
+      "text": "Read Weekly news",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": false,
+      "id": "ba812bfe-c1c7-4446-a551-2eb018ad43f7"
+    },
+    {
+      "repeat": {
+        "m": false,
+        "t": true,
+        "w": false,
+        "th": false,
+        "f": false,
+        "s": false,
+        "su": false
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "weekly",
+      "everyX": 1,
+      "streak": 3,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Tue May 15 2018 00:00:00 GMT-0300",
+        "Tue May 22 2018 00:00:00 GMT-0300",
+        "Tue May 29 2018 00:00:00 GMT-0300",
+        "Tue Jun 05 2018 00:00:00 GMT-0300",
+        "Tue Jun 12 2018 00:00:00 GMT-0300",
+        "Tue Jun 19 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524401779172,
+          "value": 0
+        },
+        {
+          "date": 1524491788861,
+          "value": 0
+        },
+        {
+          "date": 1524563317047,
+          "value": 0
+        },
+        {
+          "date": 1524587287934,
+          "value": 1
+        },
+        {
+          "date": 1524743963374,
+          "value": 1
+        },
+        {
+          "date": 1524827198539,
+          "value": 1
+        },
+        {
+          "date": 1524915986946,
+          "value": 1
+        },
+        {
+          "date": 1525028457390,
+          "value": 1
+        },
+        {
+          "date": 1525081452999,
+          "value": 1
+        },
+        {
+          "date": 1525184387527,
+          "value": 1
+        },
+        {
+          "date": 1525184398987,
+          "value": 1.9747
+        },
+        {
+          "date": 1525343767136,
+          "value": 1.9747
+        },
+        {
+          "date": 1525447814583,
+          "value": 1.9747
+        },
+        {
+          "date": 1525515446501,
+          "value": 1.9747
+        },
+        {
+          "date": 1525616241051,
+          "value": 1.9747
+        },
+        {
+          "date": 1525686066554,
+          "value": 1.9747
+        },
+        {
+          "date": 1525771635325,
+          "value": 1.9747
+        },
+        {
+          "date": 1525803388842,
+          "value": 2.9253562257358428
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 2.9253562257358428,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:58:09.118Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "8e87fe95-34e0-477e-81ba-04cb48b18092",
+      "text": "Work on Clojure",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": false,
+      "id": "8e87fe95-34e0-477e-81ba-04cb48b18092"
+    },
+    {
+      "repeat": {
+        "m": false,
+        "t": false,
+        "w": false,
+        "th": true,
+        "f": false,
+        "s": false,
+        "su": false
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "weekly",
+      "everyX": 1,
+      "streak": 2,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Thu May 10 2018 00:00:00 GMT-0300",
+        "Thu May 17 2018 00:00:00 GMT-0300",
+        "Thu May 24 2018 00:00:00 GMT-0300",
+        "Thu May 31 2018 00:00:00 GMT-0300",
+        "Thu Jun 07 2018 00:00:00 GMT-0300",
+        "Thu Jun 14 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524401779174,
+          "value": 0
+        },
+        {
+          "date": 1524491788864,
+          "value": 0
+        },
+        {
+          "date": 1524563317050,
+          "value": 0
+        },
+        {
+          "date": 1524656488594,
+          "value": 0
+        },
+        {
+          "date": 1524743963377,
+          "value": 0
+        },
+        {
+          "date": 1524743970081,
+          "value": 1
+        },
+        {
+          "date": 1524915986949,
+          "value": 1
+        },
+        {
+          "date": 1525028457392,
+          "value": 1
+        },
+        {
+          "date": 1525081453002,
+          "value": 1
+        },
+        {
+          "date": 1525184387530,
+          "value": 1
+        },
+        {
+          "date": 1525257930757,
+          "value": 1
+        },
+        {
+          "date": 1525343767138,
+          "value": 1
+        },
+        {
+          "date": 1525343777079,
+          "value": 1.9747
+        },
+        {
+          "date": 1525515446508,
+          "value": 1.9747
+        },
+        {
+          "date": 1525616241054,
+          "value": 1.9747
+        },
+        {
+          "date": 1525686066557,
+          "value": 1.9747
+        },
+        {
+          "date": 1525771635327,
+          "value": 1.9747
+        },
+        {
+          "date": 1525861148286,
+          "value": 1.9747
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 1.9747,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:58:15.453Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "74f9d1b6-aa7e-4da8-bfcd-b44b390b82c7",
+      "text": "Work on Rust",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": false,
+      "id": "74f9d1b6-aa7e-4da8-bfcd-b44b390b82c7"
+    },
+    {
+      "repeat": {
+        "m": false,
+        "t": false,
+        "w": true,
+        "th": false,
+        "f": false,
+        "s": false,
+        "su": false
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "weekly",
+      "everyX": 1,
+      "streak": 3,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "2018-05-16T03:00:00.000Z",
+        "2018-05-23T03:00:00.000Z",
+        "2018-05-30T03:00:00.000Z",
+        "2018-06-06T03:00:00.000Z",
+        "2018-06-13T03:00:00.000Z",
+        "2018-06-20T03:00:00.000Z"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524401779176,
+          "value": 0
+        },
+        {
+          "date": 1524491788866,
+          "value": 0
+        },
+        {
+          "date": 1524563317052,
+          "value": 0
+        },
+        {
+          "date": 1524656488596,
+          "value": 0
+        },
+        {
+          "date": 1524656493953,
+          "value": 1
+        },
+        {
+          "date": 1524827198552,
+          "value": 1
+        },
+        {
+          "date": 1524915986952,
+          "value": 1
+        },
+        {
+          "date": 1525028457394,
+          "value": 1
+        },
+        {
+          "date": 1525081453004,
+          "value": 1
+        },
+        {
+          "date": 1525184387532,
+          "value": 1
+        },
+        {
+          "date": 1525257930759,
+          "value": 1
+        },
+        {
+          "date": 1525257959641,
+          "value": 1.9747
+        },
+        {
+          "date": 1525447814589,
+          "value": 1.9747
+        },
+        {
+          "date": 1525515446510,
+          "value": 1.9747
+        },
+        {
+          "date": 1525616241056,
+          "value": 1.9747
+        },
+        {
+          "date": 1525686066559,
+          "value": 1.9747
+        },
+        {
+          "date": 1525771635330,
+          "value": 1.9747
+        },
+        {
+          "date": 1525861148291,
+          "value": 1.9747
+        },
+        {
+          "date": 1525861185911,
+          "value": 2.9253562257358428
+        }
+      ],
+      "completed": true,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 2.9253562257358428,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:58:20.955Z",
+      "updatedAt": "2018-05-09T10:19:45.957Z",
+      "_id": "14ef2496-0d30-4ac8-89e3-aa14ed61b60e",
+      "text": "Work on Python",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": true,
+      "id": "14ef2496-0d30-4ac8-89e3-aa14ed61b60e"
+    },
+    {
+      "repeat": {
+        "m": false,
+        "t": false,
+        "w": false,
+        "th": false,
+        "f": true,
+        "s": false,
+        "su": false
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "weekly",
+      "everyX": 1,
+      "streak": 2,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Fri May 11 2018 00:00:00 GMT-0300",
+        "Fri May 18 2018 00:00:00 GMT-0300",
+        "Fri May 25 2018 00:00:00 GMT-0300",
+        "Fri Jun 01 2018 00:00:00 GMT-0300",
+        "Fri Jun 08 2018 00:00:00 GMT-0300",
+        "Fri Jun 15 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524401779178,
+          "value": 0
+        },
+        {
+          "date": 1524491788867,
+          "value": 0
+        },
+        {
+          "date": 1524563317057,
+          "value": 0
+        },
+        {
+          "date": 1524656488602,
+          "value": 0
+        },
+        {
+          "date": 1524743963381,
+          "value": 0
+        },
+        {
+          "date": 1524827198554,
+          "value": 0
+        },
+        {
+          "date": 1524827209040,
+          "value": 1
+        },
+        {
+          "date": 1525028457396,
+          "value": 1
+        },
+        {
+          "date": 1525081453009,
+          "value": 1
+        },
+        {
+          "date": 1525184387535,
+          "value": 1
+        },
+        {
+          "date": 1525257930763,
+          "value": 1
+        },
+        {
+          "date": 1525343767141,
+          "value": 1
+        },
+        {
+          "date": 1525447814597,
+          "value": 1
+        },
+        {
+          "date": 1525447835698,
+          "value": 1.9747
+        },
+        {
+          "date": 1525616241062,
+          "value": 1.9747
+        },
+        {
+          "date": 1525686066562,
+          "value": 1.9747
+        },
+        {
+          "date": 1525771635333,
+          "value": 1.9747
+        },
+        {
+          "date": 1525861148293,
+          "value": 1.9747
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 1.9747,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:58:26.018Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "020f4d03-e7a4-4798-8883-fa78b9aae281",
+      "text": "Work on Java",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": false,
+      "id": "020f4d03-e7a4-4798-8883-fa78b9aae281"
+    },
+    {
+      "repeat": {
+        "m": true,
+        "t": true,
+        "w": true,
+        "th": true,
+        "f": true,
+        "s": true,
+        "su": true
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "daily",
+      "everyX": 2,
+      "streak": 8,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Fri May 11 2018 00:00:00 GMT-0300",
+        "Sun May 13 2018 00:00:00 GMT-0300",
+        "Tue May 15 2018 00:00:00 GMT-0300",
+        "Thu May 17 2018 00:00:00 GMT-0300",
+        "Sat May 19 2018 00:00:00 GMT-0300",
+        "Mon May 21 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524401779184,
+          "value": -1
+        },
+        {
+          "date": 1524491788870,
+          "value": -1
+        },
+        {
+          "date": 1524537421456,
+          "value": 0.025956704627064786
+        },
+        {
+          "date": 1524656488604,
+          "value": 0.025956704627064786
+        },
+        {
+          "date": 1524694813568,
+          "value": 1.0252917710224885
+        },
+        {
+          "date": 1524827198556,
+          "value": 1.0252917710224885
+        },
+        {
+          "date": 1524876197148,
+          "value": 1.999360257529945
+        },
+        {
+          "date": 1525028457399,
+          "value": 1.999360257529945
+        },
+        {
+          "date": 1525028463326,
+          "value": 2.949415922378421
+        },
+        {
+          "date": 1525184387536,
+          "value": 2.949415922378421
+        },
+        {
+          "date": 1525216383830,
+          "value": 3.87662110426386
+        },
+        {
+          "date": 1525343767143,
+          "value": 3.87662110426386
+        },
+        {
+          "date": 1525389121040,
+          "value": 4.7820554242776065
+        },
+        {
+          "date": 1525515446531,
+          "value": 4.7820554242776065
+        },
+        {
+          "date": 1525564499369,
+          "value": 5.666723474273019
+        },
+        {
+          "date": 1525686066564,
+          "value": 5.666723474273019
+        },
+        {
+          "date": 1525738972693,
+          "value": 6.531561630359064
+        },
+        {
+          "date": 1525861148295,
+          "value": 6.531561630359064
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 6.531561630359064,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:58:28.721Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "6baacf3c-4505-473b-a1b7-0e4c2ef76539",
+      "text": "Ligar Mae",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": true,
+      "id": "6baacf3c-4505-473b-a1b7-0e4c2ef76539"
+    },
+    {
+      "repeat": {
+        "m": true,
+        "t": true,
+        "w": true,
+        "th": true,
+        "f": true,
+        "s": true,
+        "su": true
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "daily",
+      "everyX": 1,
+      "streak": 12,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Thu May 10 2018 00:00:00 GMT-0300",
+        "Fri May 11 2018 00:00:00 GMT-0300",
+        "Sat May 12 2018 00:00:00 GMT-0300",
+        "Sun May 13 2018 00:00:00 GMT-0300",
+        "Mon May 14 2018 00:00:00 GMT-0300",
+        "Tue May 15 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1524401779186,
+          "value": -1
+        },
+        {
+          "date": 1524418538705,
+          "value": 0.025956704627064786
+        },
+        {
+          "date": 1524537419318,
+          "value": 1.0252917710224885
+        },
+        {
+          "date": 1524656488611,
+          "value": 0.051223284515032
+        },
+        {
+          "date": 1524709883452,
+          "value": 1.0499115209124772
+        },
+        {
+          "date": 1524827198561,
+          "value": 0.07645737511504958
+        },
+        {
+          "date": 1524876195510,
+          "value": 1.0745000311078006
+        },
+        {
+          "date": 1524915991984,
+          "value": 2.0473410024494214
+        },
+        {
+          "date": 1525028461923,
+          "value": 2.996229260464287
+        },
+        {
+          "date": 1525085303654,
+          "value": 3.9223228177521747
+        },
+        {
+          "date": 1525184396539,
+          "value": 4.826697375851732
+        },
+        {
+          "date": 1525312757063,
+          "value": 5.710353966847175
+        },
+        {
+          "date": 1525389122329,
+          "value": 6.57422572642162
+        },
+        {
+          "date": 1525480773326,
+          "value": 7.419183914391411
+        },
+        {
+          "date": 1525564499150,
+          "value": 8.246043281038798
+        },
+        {
+          "date": 1525656285959,
+          "value": 9.055566862872666
+        },
+        {
+          "date": 1525739658449,
+          "value": 9.8484702792176
+        },
+        {
+          "date": 1525827999733,
+          "value": 10.625425590806492
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": 10.625425590806492,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-04-21T03:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-21T15:58:30.882Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "e2b1d163-c0cf-4793-a257-dfceada467c1",
+      "text": "Ligar Anna",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": true,
+      "id": "e2b1d163-c0cf-4793-a257-dfceada467c1"
+    },
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "todo",
+      "notes": "",
+      "tags": [
+        "6fefa4a1-7d9e-4638-920c-e3fb8c7e9456"
+      ],
+      "value": -45.59346839896635,
+      "priority": 1.5,
+      "attribute": "str",
+      "checklist": [
+        {
+          "completed": false,
+          "text": "Igor Ishiguro",
+          "id": "b983d6a4-3a28-45de-b952-596b5cc20c95"
+        },
+        {
+          "completed": false,
+          "text": "Thiago Godoi",
+          "id": "0b29b57f-36bd-4dc5-af79-d8d6702a0ba8"
+        },
+        {
+          "completed": false,
+          "text": "Pedro Pedruzzi",
+          "id": "40f75c33-5c8b-4e2b-91d5-29eed1d11fcb"
+        },
+        {
+          "completed": true,
+          "text": "Leandro de Paula",
+          "id": "4120edee-f067-445c-a39e-8f8d79ef8266"
+        }
+      ],
+      "reminders": [],
+      "createdAt": "2018-04-24T22:37:48.329Z",
+      "updatedAt": "2018-05-09T10:19:08.424Z",
+      "_id": "0592cf30-9602-4b1d-b42e-9b7a3c36bbc1",
+      "text": "Amazon Launch 1:1",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "0592cf30-9602-4b1d-b42e-9b7a3c36bbc1"
+    },
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "todo",
+      "notes": "",
+      "tags": [
+        "6fefa4a1-7d9e-4638-920c-e3fb8c7e9456"
+      ],
+      "value": -18.55139045257033,
+      "priority": 1,
+      "attribute": "str",
+      "checklist": [
+        {
+          "completed": false,
+          "text": "Apollo",
+          "id": "30985919-8bbf-4416-9a5a-4d0bcf3c75bf"
+        },
+        {
+          "completed": false,
+          "text": "Pipeline",
+          "id": "4286ca78-7ca0-49d9-a845-ad79684c7906"
+        },
+        {
+          "completed": false,
+          "text": "Lambda",
+          "id": "67c1ce4f-3d1e-4ab8-89fc-b182dfe52161"
+        },
+        {
+          "completed": false,
+          "text": "EC2",
+          "id": "62250d23-898d-4227-ab99-553433a01626"
+        },
+        {
+          "completed": false,
+          "text": "Dynamo",
+          "id": "cb40ce23-1131-4e99-8d54-3bcf567f40f3"
+        },
+        {
+          "completed": false,
+          "text": "SNS/SQS",
+          "id": "235d764d-45cf-4504-8051-6041716c1bcb"
+        }
+      ],
+      "reminders": [],
+      "createdAt": "2018-04-24T22:59:21.083Z",
+      "updatedAt": "2018-05-09T10:19:08.424Z",
+      "_id": "5a9eb081-bbc8-4205-818d-50e623090046",
+      "text": "Draw NED Arquitecture",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "5a9eb081-bbc8-4205-818d-50e623090046"
+    },
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "todo",
+      "notes": "https://w.amazon.com/bin/view/EE/Learn/Resources/SDEToolkit/Development_Plan/",
+      "tags": [
+        "6fefa4a1-7d9e-4638-920c-e3fb8c7e9456",
+        "f6543801-f326-4757-8521-236a3e13cbc1"
+      ],
+      "value": -18.55139045257033,
+      "priority": 2,
+      "attribute": "str",
+      "checklist": [
+        {
+          "completed": false,
+          "text": "Pre-write your success story for the year",
+          "id": "a1cdd8c9-8012-4fe6-99c1-a50db3cb5926"
+        },
+        {
+          "completed": false,
+          "text": "Set Goals",
+          "id": "3956d15b-6b08-4082-a8e3-d729406719ce"
+        },
+        {
+          "completed": false,
+          "text": "Set Development Activities",
+          "id": "4326481c-fb46-44e1-8fb3-baf50fd2910d"
+        },
+        {
+          "completed": false,
+          "text": "Review your Development Plan",
+          "id": "c7b8110c-d999-4ec3-bc6b-bfb875afaff8"
+        },
+        {
+          "completed": false,
+          "text": "SDE Matrix",
+          "id": "6c8b184b-2b1e-465f-a51d-b194ec514ed1"
+        }
+      ],
+      "reminders": [],
+      "createdAt": "2018-04-24T23:06:31.021Z",
+      "updatedAt": "2018-05-09T10:19:08.424Z",
+      "_id": "7086d3ad-24ab-4795-9f2e-3836d9d92869",
+      "text": "SDE Plan",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "7086d3ad-24ab-4795-9f2e-3836d9d92869"
+    },
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "todo",
+      "notes": "",
+      "tags": [
+        "f6543801-f326-4757-8521-236a3e13cbc1",
+        "b0b47b94-a1b4-4524-9183-4f3b05fdfaeb"
+      ],
+      "value": -15.516945905169635,
+      "priority": 1,
+      "attribute": "str",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-04-26T19:18:57.972Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "99a89fd4-01e9-459d-9c5b-5bf638a28492",
+      "text": "Projeto casa",
+      "date": "2018-05-08T15:27:00.000Z",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "99a89fd4-01e9-459d-9c5b-5bf638a28492"
+    },
+    {
+      "repeat": {
+        "m": true,
+        "t": true,
+        "w": true,
+        "th": true,
+        "f": true,
+        "s": true,
+        "su": true
+      },
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "monthly",
+      "everyX": 1,
+      "streak": 0,
+      "daysOfMonth": [
+        2
+      ],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Sat Jun 02 2018 00:00:00 GMT-0300",
+        "Mon Jul 02 2018 00:00:00 GMT-0300",
+        "Thu Aug 02 2018 00:00:00 GMT-0300",
+        "Sun Sep 02 2018 00:00:00 GMT-0300",
+        "Tue Oct 02 2018 00:00:00 GMT-0300",
+        "Fri Nov 02 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1525257930769,
+          "value": 0
+        },
+        {
+          "date": 1525343767151,
+          "value": -1
+        },
+        {
+          "date": 1525447814613,
+          "value": -1
+        },
+        {
+          "date": 1525515446539,
+          "value": -1
+        },
+        {
+          "date": 1525616241074,
+          "value": -1
+        },
+        {
+          "date": 1525686066568,
+          "value": -1
+        },
+        {
+          "date": 1525771635344,
+          "value": -1
+        },
+        {
+          "date": 1525861148302,
+          "value": -1
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [],
+      "value": -1,
+      "priority": 1,
+      "attribute": "str",
+      "startDate": "2018-05-02T23:13:36.448Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-05-01T23:14:35.613Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "73733b85-6cb3-4577-b223-0a3624987e60",
+      "text": "Pagar Carro",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": false,
+      "id": "73733b85-6cb3-4577-b223-0a3624987e60"
+    },
+    {
+      "challenge": {
+        "taskId": "dfeb5461-95b0-42f6-9716-ff4749a48be5",
+        "id": "d6f23400-1ac9-4d2a-85d2-65e3ad984899",
+        "shortName": "ReadEveryDayAdv"
+      },
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "todo",
+      "notes": "The Pragmatic Programmer",
+      "tags": [
+        "d6f23400-1ac9-4d2a-85d2-65e3ad984899"
+      ],
+      "value": -6.418582324043852,
+      "priority": 0.1,
+      "attribute": "str",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-05-04T00:08:15.975Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "29c9e24a-2278-4fc8-b6e9-8a6f33631a19",
+      "text": ":book: Which book do you want to read? (write it in the notes section of this todo)",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "29c9e24a-2278-4fc8-b6e9-8a6f33631a19"
+    },
+    {
+      "repeat": {
+        "m": true,
+        "t": true,
+        "w": true,
+        "th": true,
+        "f": true,
+        "s": true,
+        "su": true
+      },
+      "challenge": {
+        "taskId": "0d71d886-5518-4f71-b6fc-6ee373d5c13a",
+        "id": "d6f23400-1ac9-4d2a-85d2-65e3ad984899",
+        "shortName": "ReadEveryDayAdv"
+      },
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "frequency": "daily",
+      "everyX": 1,
+      "streak": 6,
+      "daysOfMonth": [],
+      "weeksOfMonth": [],
+      "nextDue": [
+        "Thu May 10 2018 00:00:00 GMT-0300",
+        "Fri May 11 2018 00:00:00 GMT-0300",
+        "Sat May 12 2018 00:00:00 GMT-0300",
+        "Sun May 13 2018 00:00:00 GMT-0300",
+        "Mon May 14 2018 00:00:00 GMT-0300",
+        "Tue May 15 2018 00:00:00 GMT-0300"
+      ],
+      "yesterDaily": true,
+      "history": [
+        {
+          "date": 1525392645679,
+          "value": 1
+        },
+        {
+          "date": 1525480775030,
+          "value": 1.9747
+        },
+        {
+          "date": 1525564505322,
+          "value": 2.9253562257358428
+        },
+        {
+          "date": 1525656288166,
+          "value": 3.853133245658556
+        },
+        {
+          "date": 1525771631645,
+          "value": 4.759112700885761
+        },
+        {
+          "date": 1525834484619,
+          "value": 5.6443010177121415
+        }
+      ],
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "daily",
+      "notes": "",
+      "tags": [
+        "d6f23400-1ac9-4d2a-85d2-65e3ad984899"
+      ],
+      "value": 5.6443010177121415,
+      "priority": 1.5,
+      "attribute": "str",
+      "startDate": "2018-05-01T00:00:00.000Z",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-05-04T00:08:16.000Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "a4d93f5a-bd06-4c6a-b22e-0bc913fb1e05",
+      "text": ":tomato: Read Pom",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "isDue": true,
+      "id": "a4d93f5a-bd06-4c6a-b22e-0bc913fb1e05"
+    },
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "up": true,
+      "down": true,
+      "counterUp": 0,
+      "counterDown": 0,
+      "frequency": "daily",
+      "history": [
+        {
+          "date": 1525392529923,
+          "value": 1
+        },
+        {
+          "date": 1525480798753,
+          "value": 1.9747
+        },
+        {
+          "date": 1525515797420,
+          "value": 2.9253562257358428
+        },
+        {
+          "date": 1525564508436,
+          "value": 3.853133245658556
+        },
+        {
+          "date": 1525616632163,
+          "value": 4.759112700885761
+        },
+        {
+          "date": 1525656300637,
+          "value": 5.6443010177121415
+        },
+        {
+          "date": 1525828002657,
+          "value": 6.5096362419810205
+        },
+        {
+          "date": 1525828003573,
+          "value": 7.355994112832055
+        }
+      ],
+      "type": "habit",
+      "notes": "",
+      "tags": [],
+      "value": 7.355994112832055,
+      "priority": 1,
+      "attribute": "str",
+      "reminders": [],
+      "createdAt": "2018-05-04T00:08:48.290Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "eae59881-26a9-4d5a-bfb6-66ec0466fe8e",
+      "text": "Drink Water",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "eae59881-26a9-4d5a-bfb6-66ec0466fe8e"
+    },
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "todo",
+      "notes": "",
+      "tags": [],
+      "value": -5.273878399739519,
+      "priority": 1,
+      "attribute": "str",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-05-05T00:39:53.272Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "e3e7203e-bcdc-4778-9ee5-84a22c83e195",
+      "text": "Pagar carro",
+      "date": "",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "e3e7203e-bcdc-4778-9ee5-84a22c83e195"
+    },
+    {
+      "challenge": {},
+      "group": {
+        "approval": {
+          "required": false,
+          "approved": false,
+          "requested": false
+        },
+        "assignedUsers": []
+      },
+      "completed": false,
+      "collapseChecklist": false,
+      "type": "todo",
+      "notes": "",
+      "tags": [],
+      "value": -2.025956704627065,
+      "priority": 1,
+      "attribute": "str",
+      "checklist": [],
+      "reminders": [],
+      "createdAt": "2018-05-08T00:42:38.202Z",
+      "updatedAt": "2018-05-09T10:19:08.394Z",
+      "_id": "1328643b-6248-434e-b7d5-6a8af4060dc8",
+      "text": "Licensa office notebook mozao",
+      "userId": "4221319f-af68-4b3c-a16d-0c72dce48452",
+      "id": "1328643b-6248-434e-b7d5-6a8af4060dc8"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "a78b2f93-3783-4fb7-8bf0-fb405c78be93",
+      "data": {
+        "group": {
+          "id": "2e9b1605-9864-4c61-ae4f-e2770b1fd313",
+          "name": "Dawson Israel's Party"
+        }
+      },
+      "seen": false,
+      "type": "NEW_CHAT_MESSAGE"
+    }
+  ],
+  "userV": 2563,
+  "appVersion": "4.42.0"
+}

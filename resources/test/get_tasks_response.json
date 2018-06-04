@@ -1,0 +1,281 @@
+{
+  "data":[
+    //Habit
+    {
+      "challenge":{
+
+      },
+      "group":{
+        "approval":{
+          "required":false,
+          "approved":false,
+          "requested":false
+        },
+        "assignedUsers":[
+
+        ]
+      },
+      "up":true,
+      "down":true,
+      "counterUp":0,
+      "counterDown":0,
+      "frequency":"daily",
+      "history":[
+        {
+          "date":1522242254686,
+          "value":1
+        },
+        {
+          "date":1524418533517,
+          "value":1.9747
+        },
+        {
+          "date":1524437511653,
+          "value":2.9253562257358428
+        }
+      ],
+      "type":"habit",
+      "notes":"",
+      "tags":[
+
+      ],
+      "value":32.28283011432362,
+      "priority":1.5,
+      "attribute":"str",
+      "reminders":[
+
+      ],
+      "createdAt":"2018-03-28T13:03:26.085Z",
+      "updatedAt":"2018-05-29T12:15:02.792Z",
+      "_id":"at60917e-c9da-4de4-beb9-373f1a1510e6",
+      "text":"Example Habbit",
+      "userId":"1241311f-af68-5b3c-b16d-0c72dce48452",
+      "id":"at60917e-c9da-4de4-beb9-373f1a1510e6"
+    },
+    //Daily
+    {
+      "repeat":{
+        "m":true,
+        "t":true,
+        "w":true,
+        "th":true,
+        "f":true,
+        "s":true,
+        "su":true
+      },
+      "challenge":{
+
+      },
+      "group":{
+        "approval":{
+          "required":false,
+          "approved":false,
+          "requested":false
+        },
+        "assignedUsers":[
+
+        ]
+      },
+      "frequency":"daily",
+      "everyX":1,
+      "streak":5,
+      "daysOfMonth":[
+
+      ],
+      "weeksOfMonth":[
+
+      ],
+      "nextDue":[
+        "2018-06-05T03:00:00.000Z",
+        "2018-06-06T03:00:00.000Z",
+        "2018-06-07T03:00:00.000Z",
+        "2018-06-08T03:00:00.000Z",
+        "2018-06-09T03:00:00.000Z",
+        "2018-06-10T03:00:00.000Z"
+      ],
+      "yesterDaily":true,
+      "history":[
+        {
+          "date":1524326518536,
+          "value":1
+        },
+        {
+          "date":1524401790317,
+          "value":1.9747
+        },
+        {
+          "date":1524508709750,
+          "value":2.9253562257358428
+        }
+      ],
+      "completed":true,
+      "collapseChecklist":false,
+      "type":"daily",
+      "notes":"",
+      "tags":[
+
+      ],
+      "value":30.543401128348915,
+      "priority":1,
+      "attribute":"str",
+      "startDate":"2018-04-21T03:00:00.000Z",
+      "checklist":[
+
+      ],
+      "reminders":[
+
+      ],
+      "createdAt":"2018-04-21T15:57:21.569Z",
+      "updatedAt":"2018-06-04T11:40:04.581Z",
+      "_id":"0006ec71-7688-4a16-a7kj-3d49bdc64d91",
+      "text":"Example Daily",
+      "userId":"1241311f-af68-5b3c-b16d-0c72dce48452",
+      "isDue":true,
+      "id":"0006ec71-7688-4a16-a7kj-3d49bdc64d91"
+    },
+    //Weekly
+    {
+      "repeat":{
+        "m":true,
+        "t":false,
+        "w":false,
+        "th":false,
+        "f":false,
+        "s":false,
+        "su":false
+      },
+      "challenge":{
+
+      },
+      "group":{
+        "approval":{
+          "required":false,
+          "approved":false,
+          "requested":false
+        },
+        "assignedUsers":[
+
+        ]
+      },
+      "frequency":"weekly",
+      "everyX":1,
+      "streak":8,
+      "daysOfMonth":[
+
+      ],
+      "weeksOfMonth":[
+
+      ],
+      "nextDue":[
+        "2018-06-11T03:00:00.000Z",
+        "2018-06-18T03:00:00.000Z",
+        "2018-06-25T03:00:00.000Z",
+        "2018-07-02T03:00:00.000Z",
+        "2018-07-09T03:00:00.000Z",
+        "2018-07-16T03:00:00.000Z"
+      ],
+      "yesterDaily":true,
+      "history":[
+        {
+          "date":1524401779164,
+          "value":0
+        },
+        {
+          "date":1524491788856,
+          "value":0
+        },
+        {
+          "date":1524508695779,
+          "value":1
+        }
+      ],
+      "completed":true,
+      "collapseChecklist":false,
+      "type":"daily",
+      "notes":"",
+      "tags":[
+
+      ],
+      "value":7.355994112832055,
+      "priority":1,
+      "attribute":"str",
+      "startDate":"2018-04-21T03:00:00.000Z",
+      "checklist":[
+
+      ],
+      "reminders":[
+
+      ],
+      "createdAt":"2018-04-21T15:58:01.521Z",
+      "updatedAt":"2018-06-04T11:40:02.805Z",
+      "_id":"f699f44e-0bb2-495d-b816-77cb06e1pp32",
+      "text":"Example Weekly",
+      "userId":"1241311f-af68-5b3c-b16d-0c72dce48452",
+      "isDue":true,
+      "id":"f699f44e-0bb2-495d-b816-77cb06e1pp32"
+    },
+    //Todo
+    {
+      "challenge":{
+
+      },
+      "group":{
+        "approval":{
+          "required":false,
+          "approved":false,
+          "requested":false
+        },
+        "assignedUsers":[
+
+        ]
+      },
+      "completed":false,
+      "collapseChecklist":false,
+      "type":"todo",
+      "notes":"https://w.amazon.com/bin/view/EE/Learn/Resources/SDEToolkit/Development_Plan/",
+      "tags":[
+        "6fefa4a1-7d9e-4638-920c-e3fb8c7e9456",
+        "f6543801-f326-4757-8521-236a3e13cbc1"
+      ],
+      "value":-94.28666567212561,
+      "priority":2,
+      "attribute":"str",
+      "checklist":[
+        {
+          "completed":false,
+          "text":"CheckList 1",
+          "id":"a1cdd8c9-8012-4fe6-99c1-a50db3cb5926"
+        },
+        {
+          "completed":false,
+          "text":"CheckList 2",
+          "id":"3956d15b-6b08-4082-a8e3-d729406719ce"
+        },
+        {
+          "completed":false,
+          "text":"CheckList 3",
+          "id":"4326481c-fb46-44e1-8fb3-baf50fd2910d"
+        },
+        {
+          "completed":false,
+          "text":"CheckList 4",
+          "id":"c7b8110c-d999-4ec3-bc6b-bfb875afaff8"
+        },
+        {
+          "completed":false,
+          "text":"CheckList 5",
+          "id":"6c8b184b-2b1e-465f-a51d-b194ec514ed1"
+        }
+      ],
+      "reminders":[
+
+      ],
+      "createdAt":"2018-04-24T23:06:31.021Z",
+      "updatedAt":"2018-06-04T11:39:37.314Z",
+      "_id":"0006d3ad-24ab-4795-9f2e-3836d9d92869",
+      "text":"Example TODO",
+      "userId":"1241311f-af68-5b3c-b16d-0c72dce48452",
+      "id":"0006d3ad-24ab-4795-9f2e-3836d9d92869"
+    },
+  ]
+}
