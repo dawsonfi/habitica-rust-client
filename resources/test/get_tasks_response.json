@@ -1,6 +1,5 @@
 {
   "data":[
-    //Habit
     {
       "challenge":{
 
@@ -52,7 +51,6 @@
       "userId":"1241311f-af68-5b3c-b16d-0c72dce48452",
       "id":"at60917e-c9da-4de4-beb9-373f1a1510e6"
     },
-    //Daily
     {
       "repeat":{
         "m":true,
@@ -133,7 +131,6 @@
       "isDue":true,
       "id":"0006ec71-7688-4a16-a7kj-3d49bdc64d91"
     },
-    //Weekly
     {
       "repeat":{
         "m":true,
@@ -214,7 +211,6 @@
       "isDue":true,
       "id":"f699f44e-0bb2-495d-b816-77cb06e1pp32"
     },
-    //Todo
     {
       "challenge":{
 
@@ -276,6 +272,6 @@
       "text":"Example TODO",
       "userId":"1241311f-af68-5b3c-b16d-0c72dce48452",
       "id":"0006d3ad-24ab-4795-9f2e-3836d9d92869"
-    },
+    }
   ]
 }

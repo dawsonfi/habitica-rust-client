@@ -89,29 +89,43 @@ mod tests {
 
     use super::*;
     use serde_json;
+    use std::fs::File;
+    use std::io::Read;
+    use std::path::PathBuf;
 
     #[test]
     fn should_build_tasks_from_response() {
-        let data = r#"{
-                                "data": [
-                                    {"text": "Todo"}
-                                ]
-                             }"#;
-        let raw_tasks = serde_json::from_str(data).unwrap();
+        let data = get_tasks_response_data();
+        let raw_tasks: Value = serde_json::from_str(&data).unwrap();
 
         let tasks = Tasks::new(raw_tasks);
 
-        assert_eq!(tasks.tasks.len(), 1);
+        assert_eq!(tasks.tasks.len(), 4);
     }
 
     #[test]
     fn should_build_task_from_value() {
-        let data = r#"{ "text": "Todo" }"#;
-        let raw_task = serde_json::from_str(data).unwrap();
+        let data = get_tasks_response_data();
+        let raw_tasks: Value = serde_json::from_str(&data).unwrap();
+        let raw_task = raw_tasks
+            .get("data").unwrap()
+            .as_array().unwrap()
+            .get(0).unwrap();
 
         let task = Task::new(&raw_task);
 
-        assert_eq!(task.get_text(), "Todo");
+        assert_eq!(task.get_text(), "Example Habbit");
+    }
+
+    fn get_tasks_response_data() -> String {
+        let mut path = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+        path.push("resources/test/get_tasks_response.json");
+
+        let mut file = File::open(path).unwrap();
+        let mut data = String::new();
+        file.read_to_string(&mut data).unwrap();
+
+        data
     }
 
 }
