@@ -252,26 +252,6 @@
           "completed":false,
           "text":"CheckList 1",
           "id":"a1cdd8c9-8012-4fe6-99c1-a50db3cb5926"
-        },
-        {
-          "completed":false,
-          "text":"CheckList 2",
-          "id":"3956d15b-6b08-4082-a8e3-d729406719ce"
-        },
-        {
-          "completed":false,
-          "text":"CheckList 3",
-          "id":"4326481c-fb46-44e1-8fb3-baf50fd2910d"
-        },
-        {
-          "completed":false,
-          "text":"CheckList 4",
-          "id":"c7b8110c-d999-4ec3-bc6b-bfb875afaff8"
-        },
-        {
-          "completed":false,
-          "text":"CheckList 5",
-          "id":"6c8b184b-2b1e-465f-a51d-b194ec514ed1"
         }
       ],
       "reminders":[
@@ -279,16 +259,13 @@
       ],
       "nextDue":[
         "2018-06-05T03:00:00.000Z",
-        "2018-06-06T03:00:00.000Z",
-        "2018-06-07T03:00:00.000Z",
-        "2018-06-08T03:00:00.000Z",
-        "2018-06-09T03:00:00.000Z",
-        "2018-06-10T03:00:00.000Z"
+        "2018-06-06T04:00:00.000Z"
       ],
       "createdAt":"2018-04-24T23:06:31.021Z",
       "updatedAt":"2018-06-04T11:39:37.314Z",
       "_id":"0006d3ad-24ab-4795-9f2e-3836d9d92869",
       "text":"Example TODO",
+      "isDue": true,
       "userId":"1241311f-af68-5b3c-b16d-0c72dce48452",
       "id":"0006d3ad-24ab-4795-9f2e-3836d9d92869"
     }
