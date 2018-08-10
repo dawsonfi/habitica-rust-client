@@ -225,9 +225,19 @@
 
         ]
       },
+      "repeat":{
+        "m":true,
+        "t":false,
+        "w":false,
+        "th":false,
+        "f":false,
+        "s":false,
+        "su":false
+      },
       "completed":false,
       "collapseChecklist":false,
       "type":"todo",
+      "everyX":1,
       "notes":"https://w.amazon.com/bin/view/EE/Learn/Resources/SDEToolkit/Development_Plan/",
       "tags":[
         "6fefa4a1-7d9e-4638-920c-e3fb8c7e9456",
@@ -236,6 +246,7 @@
       "value":-94.28666567212561,
       "priority":2,
       "attribute":"str",
+      "frequency": "daily",
       "checklist":[
         {
           "completed":false,
@@ -265,6 +276,14 @@
       ],
       "reminders":[
 
+      ],
+      "nextDue":[
+        "2018-06-05T03:00:00.000Z",
+        "2018-06-06T03:00:00.000Z",
+        "2018-06-07T03:00:00.000Z",
+        "2018-06-08T03:00:00.000Z",
+        "2018-06-09T03:00:00.000Z",
+        "2018-06-10T03:00:00.000Z"
       ],
       "createdAt":"2018-04-24T23:06:31.021Z",
       "updatedAt":"2018-06-04T11:39:37.314Z",
