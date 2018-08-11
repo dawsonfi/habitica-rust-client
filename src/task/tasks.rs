@@ -199,6 +199,38 @@ impl Task {
     }
 }
 
+impl TaskRepeat {
+
+    pub fn get_days(&self) -> &HashMap<String, bool> {
+        &self.days
+    }
+
+}
+
+impl TaskCheckList {
+
+    pub fn get_list(&self) -> &Vec<TaskCheckListItem> {
+        &self.list
+    }
+
+}
+
+impl TaskCheckListItem {
+
+    pub fn is_completed(&self) -> &bool {
+        &self.completed
+    }
+
+    pub fn get_text(&self) -> &String {
+        &self.text
+    }
+
+    pub fn get_id(&self) -> &String {
+        &self.id
+    }
+
+ }
+
 #[cfg(test)]
 mod tests {
 
@@ -229,15 +261,8 @@ mod tests {
 
         let task = Task::new(&raw_task);
 
-        let repeat: HashMap<String, bool> = [("m".to_string(), true),
-            ("t".to_string(), false),
-            ("w".to_string(), false),
-            ("th".to_string(), false),
-            ("f".to_string(), false),
-            ("s".to_string(), false),
-            ("su".to_string(), false)].iter().cloned().collect();
-
-        let check_list = TaskCheckList { list: vec![TaskCheckListItem { completed: false, text: "CheckList 1".to_string(), id: "a1cdd8c9-8012-4fe6-99c1-a50db3cb5926".to_string() }] };
+        let repeat = get_task_repeat();
+        let check_list = TaskCheckList { list: vec![get_task_check_list_item()] };
 
         assert_eq!(task.get_text(), &Some("Example TODO".to_string()));
         assert_eq!(task.get_frequency(), &Some("daily".to_string()));
@@ -251,6 +276,41 @@ mod tests {
         assert_eq!(task.get_checklist(), &Some(check_list) );
     }
 
+    #[test]
+    fn should_return_days() {
+        let task_repeat = TaskRepeat{days: get_task_repeat()};
+
+        assert_eq!(task_repeat.get_days(), &get_task_repeat());
+    }
+
+    #[test]
+    fn should_return_checklist() {
+        let check_list = TaskCheckList { list: vec![get_task_check_list_item()] };
+
+        assert_eq!(check_list.get_list(), &vec![get_task_check_list_item()]);
+    }
+
+    #[test]
+    fn should_return_is_completed() {
+        let check_list_item = get_task_check_list_item();
+
+        assert_eq!(check_list_item.is_completed(), &false);
+    }
+
+    #[test]
+    fn should_return_text() {
+        let check_list_item = get_task_check_list_item();
+
+        assert_eq!(check_list_item.get_text(), &"CheckList 1".to_string());
+    }
+
+    #[test]
+    fn should_return_id() {
+        let check_list_item = get_task_check_list_item();
+
+        assert_eq!(check_list_item.get_id(), &"a1cdd8c9-8012-4fe6-99c1-a50db3cb5926".to_string());
+    }
+
     fn get_tasks_response_data() -> String {
         let mut path = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
         path.push("resources/test/get_tasks_response.json");
@@ -260,6 +320,20 @@ mod tests {
         file.read_to_string(&mut data).unwrap();
 
         data
+    }
+
+    fn get_task_repeat() -> HashMap<String, bool> {
+        [("m".to_string(), true),
+            ("t".to_string(), false),
+            ("w".to_string(), false),
+            ("th".to_string(), false),
+            ("f".to_string(), false),
+            ("s".to_string(), false),
+            ("su".to_string(), false)].iter().cloned().collect()
+    }
+
+    fn get_task_check_list_item() -> TaskCheckListItem {
+        TaskCheckListItem { completed: false, text: "CheckList 1".to_string(), id: "a1cdd8c9-8012-4fe6-99c1-a50db3cb5926".to_string() }
     }
 
 }
