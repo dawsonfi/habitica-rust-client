@@ -4,14 +4,14 @@ cache: cargo
 sudo: true
 
 rust:
-  - nightly
+  - stable 
 
 before_install:
   - sudo apt-get update
 
 matrix:
   allow_failures:
-    - rust: nightly
+    - rust: stable 
 
 addons:
   apt:
