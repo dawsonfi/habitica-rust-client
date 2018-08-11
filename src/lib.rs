@@ -1,5 +1,5 @@
-extern crate serde_json;
 extern crate reqwest;
 extern crate serde;
+extern crate serde_json;
 
 pub mod task;

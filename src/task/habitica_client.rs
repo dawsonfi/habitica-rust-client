@@ -1,5 +1,5 @@
 use task::api_credentials::ApiCredentials;
-use task::rest_client::{RestOperations, RestClient, RestClientError};
+use task::rest_client::{RestClient, RestClientError, RestOperations};
 use task::tasks::Tasks;
 
 pub struct HabiticaClient {
@@ -61,7 +61,6 @@ impl HabiticaClient {
 
         Ok(Tasks::new(response?))
     }
-
 }
 
 #[cfg(test)]
@@ -75,7 +74,7 @@ mod tests {
     fn return_tasks_when_rest_call_succeds() {
         let client = HabiticaClient {
             rest_client: Box::new(SuccessRestClient {}),
-            url: "https://habitica.com/api/v3/tasks/user"
+            url: "https://habitica.com/api/v3/tasks/user",
         };
 
         let tasks = client.get_all_tasks();
@@ -87,7 +86,7 @@ mod tests {
     fn return_err_when_rest_call_fails() {
         let client = HabiticaClient {
             rest_client: Box::new(ErrorRestClient {}),
-            url: "https://habitica.com/api/v3/tasks/user"
+            url: "https://habitica.com/api/v3/tasks/user",
         };
 
         let tasks = client.get_all_tasks();

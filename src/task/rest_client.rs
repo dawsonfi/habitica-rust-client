@@ -1,9 +1,9 @@
 use reqwest;
 use reqwest::header::Headers;
 use reqwest::Client;
+use serde_json::Value;
 use std::fmt;
 use task::api_credentials::ApiCredentials;
-use serde_json::Value;
 
 pub trait RestOperations {
     fn get(&self, url: &str) -> Result<Value, RestClientError>;
@@ -15,7 +15,6 @@ pub struct RestClient {
 }
 
 impl RestClient {
-
     pub fn new(api_credentials: ApiCredentials) -> Box<RestOperations> {
         let client = reqwest::Client::new();
         Box::new(RestClient {
@@ -47,7 +46,8 @@ impl RestOperations for RestClient {
     fn get(&self, url: &str) -> Result<Value, RestClientError> {
         let headers = self.build_auth_headers();
 
-        Ok(self.get_client()
+        Ok(self
+            .get_client()
             .get(url)
             .headers(headers)
             .send()

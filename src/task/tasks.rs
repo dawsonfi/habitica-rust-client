@@ -17,12 +17,12 @@ pub struct Task {
     next_due: Option<Vec<String>>,
     completed: Option<bool>,
     is_due: Option<bool>,
-    checklist: Option<TaskCheckList>
+    checklist: Option<TaskCheckList>,
 }
 
 #[derive(Debug, PartialEq)]
 pub struct TaskRepeat {
-    days: HashMap<String, bool>
+    days: HashMap<String, bool>,
 }
 
 #[derive(Debug, PartialEq)]
@@ -34,7 +34,7 @@ pub struct TaskCheckList {
 pub struct TaskCheckListItem {
     completed: bool,
     text: String,
-    id: String
+    id: String,
 }
 
 impl Tasks {
@@ -84,12 +84,16 @@ impl Task {
             frequency: Task::get_value_string(raw_task, "frequency"),
             task_type: Task::get_value_string(raw_task, "type"),
             notes: Task::get_value_string(raw_task, "notes"),
-            repeat: Some(TaskRepeat { days: Task::get_value_map(raw_task, "repeat") }),
+            repeat: Some(TaskRepeat {
+                days: Task::get_value_map(raw_task, "repeat"),
+            }),
             every_x: Task::get_value_i64(raw_task, "everyX"),
             next_due: Task::get_value_vec(raw_task, "nextDue"),
             completed: Task::get_value_bool(raw_task, "completed"),
             is_due: Task::get_value_bool(raw_task, "isDue"),
-            checklist: Some(TaskCheckList { list: Task::get_value_checklist(raw_task, "checklist") })
+            checklist: Some(TaskCheckList {
+                list: Task::get_value_checklist(raw_task, "checklist"),
+            }),
         }
     }
 
@@ -136,87 +140,101 @@ impl Task {
     fn get_value_string(raw_task: &Value, index: &str) -> Option<String> {
         let raw_value = raw_task.get(index);
 
-        return if raw_value.is_some() { Some(raw_value.unwrap().as_str().unwrap().to_string()) } else { None }
+        return if raw_value.is_some() {
+            Some(raw_value.unwrap().as_str().unwrap().to_string())
+        } else {
+            None
+        };
     }
 
     fn get_value_vec(raw_task: &Value, index: &str) -> Option<Vec<String>> {
         let raw_value = raw_task.get(index);
 
         return if raw_value.is_some() {
-            Some(raw_value.unwrap()
-                .as_array()
-                .unwrap()
-                .into_iter()
-                .map(|value| value.as_str().unwrap().to_string())
-                .collect())
+            Some(
+                raw_value
+                    .unwrap()
+                    .as_array()
+                    .unwrap()
+                    .into_iter()
+                    .map(|value| value.as_str().unwrap().to_string())
+                    .collect(),
+            )
         } else {
             None
-        }
+        };
     }
 
     fn get_value_map(raw_task: &Value, index: &str) -> HashMap<String, bool> {
         let raw_value = raw_task.get(index);
 
         return if raw_value.is_some() {
-            raw_value.unwrap()
+            raw_value
+                .unwrap()
                 .as_object()
                 .unwrap()
                 .into_iter()
-                .map(|(key, value)| (String::from(key.to_owned()), value.as_bool().unwrap()) )
+                .map(|(key, value)| (String::from(key.to_owned()), value.as_bool().unwrap()))
                 .collect()
         } else {
             HashMap::new()
-        }
+        };
     }
 
     fn get_value_checklist(raw_task: &Value, index: &str) -> Vec<TaskCheckListItem> {
         let raw_value = raw_task.get(index);
 
         return if raw_value.is_some() {
-            raw_value.unwrap()
+            raw_value
+                .unwrap()
                 .as_array()
                 .unwrap()
                 .into_iter()
-                .map(|value| TaskCheckListItem { completed: Task::get_value_bool(value, "completed").unwrap(),
-                                                            text: Task::get_value_string(value, "text").unwrap(),
-                                                            id: Task::get_value_string(value, "id").unwrap() } )
+                .map(|value| TaskCheckListItem {
+                    completed: Task::get_value_bool(value, "completed").unwrap(),
+                    text: Task::get_value_string(value, "text").unwrap(),
+                    id: Task::get_value_string(value, "id").unwrap(),
+                })
                 .collect()
         } else {
             Vec::new()
-        }
+        };
     }
 
     fn get_value_i64(raw_task: &Value, index: &str) -> Option<i64> {
         let raw_value = raw_task.get(index);
 
-        return if raw_value.is_some() { raw_value.unwrap().as_i64() } else { None }
+        return if raw_value.is_some() {
+            raw_value.unwrap().as_i64()
+        } else {
+            None
+        };
     }
 
     fn get_value_bool(raw_task: &Value, index: &str) -> Option<bool> {
         let raw_value = raw_task.get(index);
 
-        return if raw_value.is_some() { raw_value.unwrap().as_bool() } else { None }
+        return if raw_value.is_some() {
+            raw_value.unwrap().as_bool()
+        } else {
+            None
+        };
     }
 }
 
 impl TaskRepeat {
-
     pub fn get_days(&self) -> &HashMap<String, bool> {
         &self.days
     }
-
 }
 
 impl TaskCheckList {
-
     pub fn get_list(&self) -> &Vec<TaskCheckListItem> {
         &self.list
     }
-
 }
 
 impl TaskCheckListItem {
-
     pub fn is_completed(&self) -> &bool {
         &self.completed
     }
@@ -228,8 +246,7 @@ impl TaskCheckListItem {
     pub fn get_id(&self) -> &String {
         &self.id
     }
-
- }
+}
 
 #[cfg(test)]
 mod tests {
@@ -255,37 +272,58 @@ mod tests {
         let data = get_tasks_response_data();
         let raw_tasks: Value = serde_json::from_str(&data).unwrap();
         let raw_task = raw_tasks
-            .get("data").unwrap()
-            .as_array().unwrap()
-            .get(3).unwrap();
+            .get("data")
+            .unwrap()
+            .as_array()
+            .unwrap()
+            .get(3)
+            .unwrap();
 
         let task = Task::new(&raw_task);
 
         let repeat = get_task_repeat();
-        let check_list = TaskCheckList { list: vec![get_task_check_list_item()] };
+        let check_list = TaskCheckList {
+            list: vec![get_task_check_list_item()],
+        };
 
         assert_eq!(task.get_text(), &Some("Example TODO".to_string()));
         assert_eq!(task.get_frequency(), &Some("daily".to_string()));
         assert_eq!(task.get_task_type(), &Some("todo".to_string()));
-        assert_eq!(task.get_notes(), &Some("https://w.amazon.com/bin/view/EE/Learn/Resources/SDEToolkit/Development_Plan/".to_string()));
+        assert_eq!(
+            task.get_notes(),
+            &Some(
+                "https://w.amazon.com/bin/view/EE/Learn/Resources/SDEToolkit/Development_Plan/"
+                    .to_string()
+            )
+        );
         assert_eq!(task.get_every_x(), &Some(1i64));
-        assert_eq!(task.get_next_due(), &Some(vec!["2018-06-05T03:00:00.000Z".to_string(), "2018-06-06T04:00:00.000Z".to_string()]));
+        assert_eq!(
+            task.get_next_due(),
+            &Some(vec![
+                "2018-06-05T03:00:00.000Z".to_string(),
+                "2018-06-06T04:00:00.000Z".to_string(),
+            ])
+        );
         assert_eq!(task.is_completed(), &Some(false));
         assert_eq!(task.is_due(), &Some(true));
-        assert_eq!(task.get_repeat(), &Some(TaskRepeat{days: repeat}));
-        assert_eq!(task.get_checklist(), &Some(check_list) );
+        assert_eq!(task.get_repeat(), &Some(TaskRepeat { days: repeat }));
+        assert_eq!(task.get_checklist(), &Some(check_list));
     }
 
     #[test]
     fn should_return_days() {
-        let task_repeat = TaskRepeat{days: get_task_repeat()};
+        let task_repeat = TaskRepeat {
+            days: get_task_repeat(),
+        };
 
         assert_eq!(task_repeat.get_days(), &get_task_repeat());
     }
 
     #[test]
     fn should_return_checklist() {
-        let check_list = TaskCheckList { list: vec![get_task_check_list_item()] };
+        let check_list = TaskCheckList {
+            list: vec![get_task_check_list_item()],
+        };
 
         assert_eq!(check_list.get_list(), &vec![get_task_check_list_item()]);
     }
@@ -308,7 +346,10 @@ mod tests {
     fn should_return_id() {
         let check_list_item = get_task_check_list_item();
 
-        assert_eq!(check_list_item.get_id(), &"a1cdd8c9-8012-4fe6-99c1-a50db3cb5926".to_string());
+        assert_eq!(
+            check_list_item.get_id(),
+            &"a1cdd8c9-8012-4fe6-99c1-a50db3cb5926".to_string()
+        );
     }
 
     fn get_tasks_response_data() -> String {
@@ -323,17 +364,25 @@ mod tests {
     }
 
     fn get_task_repeat() -> HashMap<String, bool> {
-        [("m".to_string(), true),
+        [
+            ("m".to_string(), true),
             ("t".to_string(), false),
             ("w".to_string(), false),
             ("th".to_string(), false),
             ("f".to_string(), false),
             ("s".to_string(), false),
-            ("su".to_string(), false)].iter().cloned().collect()
+            ("su".to_string(), false),
+        ].iter()
+            .cloned()
+            .collect()
     }
 
     fn get_task_check_list_item() -> TaskCheckListItem {
-        TaskCheckListItem { completed: false, text: "CheckList 1".to_string(), id: "a1cdd8c9-8012-4fe6-99c1-a50db3cb5926".to_string() }
+        TaskCheckListItem {
+            completed: false,
+            text: "CheckList 1".to_string(),
+            id: "a1cdd8c9-8012-4fe6-99c1-a50db3cb5926".to_string(),
+        }
     }
 
 }
