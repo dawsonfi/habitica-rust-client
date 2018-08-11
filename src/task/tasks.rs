@@ -93,24 +93,6 @@ impl Task {
         }
     }
 
-    /// Returns the text of the task
-    ///
-    /// # Examples
-    ///
-    /// ```
-    /// extern crate habitica_rust_client;
-    /// extern crate serde_json;
-    ///
-    /// use habitica_rust_client::task::tasks::Task;
-    /// use serde_json::Value;
-    ///
-    /// let data = r#"{"text": "test"}"#;
-    ///
-    /// let value: Value = serde_json::from_str(data).unwrap();
-    /// let task = Task::new(&value);
-    ///
-    /// print!("{:?}", task.get_text());
-    /// ```
     pub fn get_text(&self) -> &Option<String> {
         &self.text
     }
